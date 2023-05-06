@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Coin
   - Ship
+  - Hits
+  - Character
+  - Water
   layers:
   - Default
   - TransparentFX

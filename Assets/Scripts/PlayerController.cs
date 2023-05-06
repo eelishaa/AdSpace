@@ -12,11 +12,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _gravityForce = 20;
     private CharacterController _characterController;
     [SerializeField] private Text coinsText;
-    private int coins=5;
+    [SerializeField] private Text woodText;
+    [SerializeField] private Text rocksText;
+    private int wood=0;
+    private int rocks=0;
+    private int coins=0;
     void Start()
     {
+        woodText.text = $"{wood}";
+        rocksText.text = $"{rocks}";
+        coinsText.text = $" {coins}";
         _characterController = GetComponent<CharacterController>();
-        coinsText.text = $"Соберите ещё {coins} вишней";
     }
     private void Update()
     {
@@ -53,17 +59,40 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Coin")
         {
-                coins--;
-                if (coins == 0) coinsText.text = $"Отнесите вишни на корабль!";
-                else coinsText.text = $"Соберите ещё {coins} вишней";
+                coins++;
+                coinsText.text = $" {coins}";
                 Destroy(other.gameObject);
         }
+        
     }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnTriggerStay(Collider other)
     {
-        if (hit.gameObject.tag == "Ship" && coins == 0)
+        if (other.gameObject.tag == "Water")
         {
-            coinsText.text = $"Отлично, миссия выполнена!";
+            if (coins != 0) coins--;
+            else if (rocks != 0) rocks--;
+            else if (wood != 0) wood--;
+            woodText.text = $"{wood}";
+            rocksText.text = $"{rocks}";
+            coinsText.text = $" {coins}";
         }
-    } 
+    }
+    public int getWood()
+    {
+        return wood;
+    }
+    public int getRocks()
+    {
+        return rocks;
+    }
+    public void setRocks(int o)
+    {
+        rocks = o;
+        rocksText.text = $"{rocks}";
+    }
+    public void setWood(int o)
+    {
+        wood=o;
+        woodText.text = $"{wood}";
+    }
 }

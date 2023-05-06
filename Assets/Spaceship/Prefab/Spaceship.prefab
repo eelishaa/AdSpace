@@ -122,6 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 400004}
   - component: {fileID: 9500000}
+  - component: {fileID: 5644452787581127348}
+  - component: {fileID: 417555406140117962}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -164,3 +166,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5644452787581127348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b53fa050558fce4bbb2794817f99afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  wood: {fileID: 0}
+  rocks: {fileID: 0}
+  startrocks: 140
+  startwood: 250
+  person: {fileID: 0}
+--- !u!65 &417555406140117962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25, y: 50.89682, z: 79.00871}
+  m_Center: {x: -0.000000007940148, y: 21.09395, z: 1.638821}
