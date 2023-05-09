@@ -10,6 +10,7 @@ public class Rock : MonoBehaviour
     [SerializeField] private ParticleSystem fire;
     [SerializeField] private ParticleSystem destroyFire;
     [SerializeField] private GameObject person;
+    private bool once = false;
     private void Start()
     {
         _hp *= 10;
@@ -25,14 +26,23 @@ public class Rock : MonoBehaviour
                 Debug.Log(_hp);
             }
             else {
-                robot.gameObject.SetActive(false);
-                fire.Stop();
-                person.gameObject.GetComponent<PlayerController>().setRocks(_count);
-                destroyFire.gameObject.SetActive(true);
-                destroyFire.Play();
-                Destroy(this.gameObject, 5.0f);
+                if (!once)
+                {
+                    once = true;
+                    robot.gameObject.SetActive(false);
+                    fire.Stop();
+                    person.gameObject.GetComponent<PlayerController>().setRocks(_count);
+                    destroyFire.gameObject.SetActive(true);
+                    destroyFire.Play();
+                    Invoke("OnCe", 5.0f);
+                    Destroy(this.gameObject, 5.0f);
+                }
             }
         }
+    }
+    private void OnCe()
+    {
+        once = false;
     }
     private void OnTriggerExit(Collider other)
     {

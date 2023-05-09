@@ -19,9 +19,6 @@ public class PlayerController : MonoBehaviour
     private int coins=0;
     void Start()
     {
-        woodText.text = $"{wood}";
-        rocksText.text = $"{rocks}";
-        coinsText.text = $" {coins}";
         _characterController = GetComponent<CharacterController>();
     }
     private void Update()
@@ -60,7 +57,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
                 coins++;
-                coinsText.text = $" {coins}";
+                coinsText.text = $"{coins}";
                 Destroy(other.gameObject);
         }
         
@@ -70,11 +67,11 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Water")
         {
             if (coins != 0) coins--;
-            else if (rocks != 0) rocks--;
-            else if (wood != 0) wood--;
+            if (rocks != 0) rocks--;
+            if (wood != 0) wood--;
             woodText.text = $"{wood}";
             rocksText.text = $"{rocks}";
-            coinsText.text = $" {coins}";
+            coinsText.text = $"{coins}";
         }
     }
     public int getWood()
@@ -87,12 +84,22 @@ public class PlayerController : MonoBehaviour
     }
     public void setRocks(int o)
     {
-        rocks = o;
+        rocks += o;
         rocksText.text = $"{rocks}";
     }
     public void setWood(int o)
     {
-        wood=o;
+        wood += o;
+        woodText.text = $"{wood}";
+    }
+    public void setRocks0(int o)
+    {
+        rocks = o;
+        rocksText.text = $"{rocks}";
+    }
+    public void setWood0(int o)
+    {
+        wood = o;
         woodText.text = $"{wood}";
     }
 }

@@ -23,13 +23,13 @@ public class Ship : MonoBehaviour
             {
                 startwood -= b;
                 wood.text = $"{startwood}";
-                person.gameObject.GetComponent<PlayerController>().setWood(0);
+                person.gameObject.GetComponent<PlayerController>().setWood0(0);
             }
-            else if (a != 0)
+            if (a != 0)
             {
                 startrocks -= a;
                 rocks.text = $"{startrocks}";
-                person.gameObject.GetComponent<PlayerController>().setRocks(0);
+                person.gameObject.GetComponent<PlayerController>().setRocks0(0);
             }
             canvas.gameObject.SetActive(true);
         }

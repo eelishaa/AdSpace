@@ -9607,15 +9607,15 @@ RectTransform:
   m_GameObject: {fileID: 496832536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -242.00182}
-  m_LocalScale: {x: 3.890879, y: 3.8908782, z: 3.8908799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1411900159}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 374.5, y: 739.1}
-  m_SizeDelta: {x: 31, y: 25.4}
+  m_AnchoredPosition: {x: 387.8, y: 733.8}
+  m_SizeDelta: {x: 128.7, y: 79.3}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &496832538
 MonoBehaviour:
@@ -9639,7 +9639,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -9650,9 +9650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2
-
-'
+  m_Text: 0
 --- !u!222 &496832539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30456,6 +30454,11 @@ PrefabInstance:
       objectReference: {fileID: 1989531509}
     - target: {fileID: 6735222275619102175, guid: b8ca6433e7a78e346904aef72892f856,
         type: 3}
+      propertyPath: _count
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735222275619102175, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
       propertyPath: person
       value: 
       objectReference: {fileID: 1147752551563298}
@@ -34292,7 +34295,7 @@ PrefabInstance:
     - target: {fileID: 4780645939183690983, guid: 46aa8b6d013691a43a624b2200d4519a,
         type: 3}
       propertyPath: _count
-      value: 15
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4780645939183690983, guid: 46aa8b6d013691a43a624b2200d4519a,
         type: 3}
@@ -38136,15 +38139,15 @@ RectTransform:
   m_GameObject: {fileID: 1737985264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -242.00182}
-  m_LocalScale: {x: 3.890879, y: 3.8908782, z: 3.8908799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1473356053}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 378.5, y: 719.9}
-  m_SizeDelta: {x: 31, y: 25.4}
+  m_AnchoredPosition: {x: 387.8, y: 715.7}
+  m_SizeDelta: {x: 128.7, y: 79.3}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1737985266
 MonoBehaviour:
@@ -38168,10 +38171,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -38179,7 +38182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2
+  m_Text: '0
 
 '
 --- !u!222 &1737985267
@@ -42104,15 +42107,15 @@ RectTransform:
   m_GameObject: {fileID: 1880807403}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -242.00182}
-  m_LocalScale: {x: 3.890879, y: 3.8908782, z: 3.8908799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1469625945}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 373.5, y: 694.1}
-  m_SizeDelta: {x: 31, y: 25.4}
+  m_AnchoredPosition: {x: 387.8, y: 695.7}
+  m_SizeDelta: {x: 128.7, y: 79.3}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1880807405
 MonoBehaviour:
@@ -42136,7 +42139,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -42147,9 +42150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2
-
-'
+  m_Text: 0
 --- !u!222 &1880807406
 CanvasRenderer:
   m_ObjectHideFlags: 0
