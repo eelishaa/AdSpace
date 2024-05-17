@@ -30972,7 +30972,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1187100871979764, guid: b8ca6433e7a78e346904aef72892f856, type: 3}
       propertyPath: m_Name
-      value: BigPlant_05 (1)
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 1187100871979764, guid: b8ca6433e7a78e346904aef72892f856, type: 3}
       propertyPath: m_TagString
@@ -31041,6 +31041,51 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.06
       objectReference: {fileID: 0}
+    - target: {fileID: 2080398559349538002, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: _hp
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080398559349538002, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: fire
+      value: 
+      objectReference: {fileID: 1662417326}
+    - target: {fileID: 2080398559349538002, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: robot
+      value: 
+      objectReference: {fileID: 1989531509}
+    - target: {fileID: 2080398559349538002, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: _count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080398559349538002, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: person
+      value: 
+      objectReference: {fileID: 1147752551563298}
+    - target: {fileID: 2080398559349538002, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: _timeForRebirth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846000704656747158, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846000704656747158, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846000704656747158, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6735222275619102175, guid: b8ca6433e7a78e346904aef72892f856,
         type: 3}
       propertyPath: fire
@@ -31085,12 +31130,37 @@ PrefabInstance:
         type: 3}
       propertyPath: destroyFire
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113983970164525235, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: anim
+      value: 
       objectReference: {fileID: 1458347190}
+    - target: {fileID: 9113983970164525235, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: fire
+      value: 
+      objectReference: {fileID: 1662417326}
+    - target: {fileID: 9113983970164525235, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: robot
+      value: 
+      objectReference: {fileID: 1989531509}
+    - target: {fileID: 9113983970164525235, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: person
+      value: 
+      objectReference: {fileID: 1147752551563298}
+    - target: {fileID: 9113983970164525235, guid: b8ca6433e7a78e346904aef72892f856,
+        type: 3}
+      propertyPath: _timeForRebirth
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8ca6433e7a78e346904aef72892f856, type: 3}
---- !u!198 &1458347190 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2399786535898443220, guid: b8ca6433e7a78e346904aef72892f856,
+--- !u!95 &1458347190 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4204920698343421554, guid: b8ca6433e7a78e346904aef72892f856,
     type: 3}
   m_PrefabInstance: {fileID: 1458347189}
   m_PrefabAsset: {fileID: 0}
